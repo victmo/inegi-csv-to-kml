@@ -34,7 +34,7 @@ function createPlacemark(data, index) {
 	return (`
 		<Placemark>
 			<name>${ d(data, 'nombre_unidad_economica') }</name>
-			<description addr="0" color="55ff0000" ride_begin="0" ride_end="0" width="5.0">${ details }</description>
+			<description addr="0" color="55ff0000" ride_begin="0" ride_end="0" width="10.0">${ details }</description>
 			<Point><coordinates>${ d(data, 'latitud') },${ d(data, 'longitud') },0</coordinates></Point>
 		</Placemark>
 	`).replace(/\t/g, ' ');
