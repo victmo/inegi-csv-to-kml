@@ -1,10 +1,14 @@
 {
   "name": "inegi-csv-to-kml",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Converts csv DENUE data to kml",
-  "main": "index.js",
+  "main": "inegi-csv-to-kml.js",
   "scripts": {
     "start": "node inegi-csv-to-kml.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victmo/inegi-csv-to-kml.git"
   },
   "keywords": [
     "inegi",
@@ -12,8 +16,8 @@
     "csv",
     "kml"
   ],
-  "author": "victmo",
-  "license": "ISC",
+  "author": "Victor Marquez <victmo@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "csv": "^1.1.0",
     "string": "^3.3.3"
