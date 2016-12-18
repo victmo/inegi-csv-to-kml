@@ -30,10 +30,11 @@ function writeStream(inputStream, outputStream, title) {
 }
 
 function createPlacemark(data, index) {
+	const name = S(d(data, 'nombre_unidad_economica')).escapeHTML().s;
 	const details = S(createDescription(data)).escapeHTML().escapeHTML().s;
 	return (`
 		<Placemark>
-			<name>${ d(data, 'nombre_unidad_economica') }</name>
+			<name>${ name }</name>
 			<description addr="0" color="55ff0000" ride_begin="0" ride_end="0" width="10.0">${ details }</description>
 			<Point><coordinates>${ d(data, 'latitud') },${ d(data, 'longitud') },0</coordinates></Point>
 		</Placemark>
