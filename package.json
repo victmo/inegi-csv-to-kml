@@ -1,0 +1,21 @@
+{
+  "name": "inegi-csv-to-kml",
+  "version": "1.0.0",
+  "description": "Converts csv DENUE data to kml",
+  "main": "index.js",
+  "scripts": {
+    "start": "node inegi-csv-to-kml.js"
+  },
+  "keywords": [
+    "inegi",
+    "denue",
+    "csv",
+    "kml"
+  ],
+  "author": "victmo",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^1.1.0",
+    "string": "^3.3.3"
+  }
+}
