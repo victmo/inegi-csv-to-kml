@@ -24,9 +24,13 @@ function writeStream(inputStream, outputStream, title) {
 	inputStream
 		.pipe(parser)
 		.pipe(transformer)
-		.pipe(outputStream)
+		.pipe(outputStream, {end: false})
 	;
-	stream.on('end', () => outputStream.write('</Document></kml>\n'));
+	inputStream.on('end', () => {
+		// Put this under a timeline to allow all the piping to finish
+		// TODO find a more elegant way to do this...
+		setTimeout(() => outputStream.end('</Document></kml>\n'), 100);
+	});
 }
 
 function createPlacemark(data, index) {
