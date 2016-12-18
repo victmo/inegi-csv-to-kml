@@ -76,10 +76,10 @@ function createDescription(data) {
 				${ d(data, 'localidad') }
 			</td></tr>
 			${ field('Personal', d(data, 'descripcion_estrato_personal_ocupado')) }
-			${ field('Teléfono', d(data, 'Número de teléfono')) }
-			${ field('Correo', d(data, 'Correo electrónico')) }
-			${ field('Sitio Web', d(data, 'Sitio en Internet')) }
-			${ field('Fecha Incorporación', d(data, 'Fecha de incorporación al DENUE')) }
+			${ field('Teléfono', d(data, 'numero_telefono')) }
+			${ field('Correo', d(data, 'correo_electronico')) }
+			${ field('Sitio Web', d(data, 'sitio_internet')) }
+			${ field('Fecha Incorporación', d(data, 'fecha_incorporacion_denue')) }
 		</table>
 	`);
 }
