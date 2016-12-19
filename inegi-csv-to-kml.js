@@ -40,7 +40,7 @@ function createPlacemark(data, index) {
 		<Placemark>
 			<name>${ name }</name>
 			<description addr="0" color="55ff0000" ride_begin="0" ride_end="0" width="10.0">${ details }</description>
-			<Point><coordinates>${ d(data, 'latitud') },${ d(data, 'longitud') },0</coordinates></Point>
+			<Point><coordinates>${ data['longitud'] },${ data['latitud'] },0</coordinates></Point>
 		</Placemark>
 	`).replace(/\t/g, ' ');
 }
